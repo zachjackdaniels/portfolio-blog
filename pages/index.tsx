@@ -6,7 +6,8 @@ import { getAllFilesFrontMatter } from '@/lib/mdx'
 import formatDate from '@/lib/utils/formatDate'
 import { GetStaticProps, InferGetStaticPropsType } from 'next'
 import { PostFrontMatter } from 'types/PostFrontMatter'
-import NewsletterForm from '@/components/NewsletterForm'
+// import NewsletterForm from '@/components/NewsletterForm'
+// import TopTracks from 'components/TopTrack'
 
 const MAX_DISPLAY = 3
 
@@ -23,7 +24,16 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
         <div className="space-y-2 pt-6 pb-8 md:space-y-5">
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-            Latest
+            Hi 👋🏼, I'm{' '}
+            <span className="font-extrabold text-primary-500">{siteMetadata.author}</span>
+          </h1>
+          <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
+            {siteMetadata.description}
+          </p>
+        </div>
+        <div className="space-y-2 pt-6 pb-8 md:space-y-5">
+          <h1 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-4xl md:leading-14">
+            Most Recent Posts
           </h1>
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
             {siteMetadata.description}
@@ -46,7 +56,7 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
                     <div className="space-y-5 xl:col-span-3">
                       <div className="space-y-6">
                         <div>
-                          <h2 className="text-2xl font-bold leading-8 tracking-tight">
+                          <h2 className="text-xl font-bold leading-8 tracking-tight">
                             <Link
                               href={`/blog/${slug}`}
                               className="text-gray-900 dark:text-gray-100"
@@ -97,6 +107,13 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
           <NewsletterForm />
         </div>
       )} */}
+
+      {/* <div className="py-7">
+        <h1 className="text-2xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-4xl md:leading-14">
+          My <span className="text-green-500">Spotify</span> Top Song
+        </h1>
+        <TopTracks />
+      </div> */}
     </>
   )
 }
