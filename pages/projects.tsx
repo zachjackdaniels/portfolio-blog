@@ -33,3 +33,18 @@ export default function Projects() {
     </>
   )
 }
+
+;<div className="h-full w-full cursor-pointer space-y-2 rounded-lg bg-gradient-to-r from-[#a5f3fc]  to-[#3A41A4] p-[6px] duration-200 hover:scale-[1.03]">
+  <div className="dark:bg-brand-black h-full rounded-lg bg-white py-4 px-6 dark:bg-black">
+    <h1 className="text-xl font-extrabold tracking-tight text-gray-900 dark:text-gray-100 sm:text-xl  md:text-2xl">
+      <span className="pr-2" role="img" aria-label="wave">
+        ⚙
+      </span>
+      Building Project
+    </h1>
+    <p className="text-gray-600 dark:text-gray-300">
+      I'm very active on Github to create open-source projects or personal projects, sometimes I
+      also contribute to open-source projects.
+    </p>
+  </div>
+</div>

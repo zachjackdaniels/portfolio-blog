@@ -6,6 +6,9 @@ import { getAllFilesFrontMatter } from '@/lib/mdx'
 import formatDate from '@/lib/utils/formatDate'
 import { GetStaticProps, InferGetStaticPropsType } from 'next'
 import { PostFrontMatter } from 'types/PostFrontMatter'
+import Typewriter from 'typewriter-effect'
+import Image from 'next/image'
+// import skipic from '/images/skipic.png'
 // import NewsletterForm from '@/components/NewsletterForm'
 // import TopTracks from 'components/TopTrack'
 
@@ -23,21 +26,50 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
       <div className="divide-y divide-gray-200 dark:divide-gray-700 ">
         <div className="space-y-2 pt-6 pb-8 md:space-y-5">
-          <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-            Hi 👋🏼, I'm{' '}
-            <span className="font-extrabold text-primary-500">{siteMetadata.author}</span>
+          <h1 className="inline-flex text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+            <span className=" min-w-fit">Hi 👋🏼, I'm</span>
+            <span className=" pl-3 text-primary-500">
+              <Typewriter
+                options={{
+                  strings: [
+                    'Zach Daniels',
+                    'a full-stack developer',
+                    'an entrepreneur',
+                    'a student',
+                  ],
+                  autoStart: true,
+                  loop: true,
+                  delay: 230,
+                  cursor: '|',
+                  pauseFor: 3500,
+                }}
+              />
+              {/* {siteMetadata.author} */}
+            </span>
           </h1>
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
             {siteMetadata.description}
           </p>
+          {/* potentially put images here */}
+          {/* <div className="mt-6 flex w-full justify-center">
+            <p>asdfasd</p>
+            <Image
+              src="/static/images/skitrip.png"
+              alt="Picture of Zach skiing"
+              width="1000"
+              height="1000"
+            />
+            <p className=" text-base text-gray-500 dark:text-gray-400">Hello</p>
+          </div> */}
         </div>
+        {/* Blog preview portion of index page */}
         <div className="space-y-2 pt-6 pb-8 md:space-y-5">
           <h1 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-4xl md:leading-14">
             Most Recent Posts
           </h1>
-          <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
+          {/* <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
             {siteMetadata.description}
-          </p>
+          </p> */}
         </div>
         <ul className="divide-y divide-gray-200 dark:divide-gray-700">
           {!posts.length && 'No posts found.'}
