@@ -41,7 +41,6 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
                   loop: true,
                   delay: 230,
                   cursor: '|',
-                  pauseFor: 3500,
                 }}
               />
               {/* {siteMetadata.author} */}
