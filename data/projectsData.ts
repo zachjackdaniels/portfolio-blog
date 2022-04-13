@@ -1,19 +1,15 @@
 const projectsData = [
   {
-    title: 'A Search Engine',
-    description: `What if you could look up any information in the world? Webpages, images, videos
-    and more. Google has many features to help you find exactly what you're looking
-    for.`,
-    imgSrc: '/static/images/google.png',
-    href: 'https://www.google.com',
+    title: 'INTEX II: Fag El Gamous',
+    description: `Application for archaeologists to record and track locations of mummies found in the Fag El Gamous region of Egypt.`,
+    imgSrc: '/static/images/jeremy-bezanger-h9RyJjZZTOE-unsplash.jpg',
+    href: 'https://github.com/zachjackdaniels/BYUFagElGamous1_5',
   },
   {
-    title: 'The Time Machine',
-    description: `Imagine being able to travel back in time or to the future. Simple turn the knob
-    to the desired date and press "Go". No more worrying about lost keys or
-    forgotten headphones with this simple yet affordable solution.`,
-    imgSrc: '/static/images/time-machine.jpg',
-    href: '/blog/the-time-machine',
+    title: 'This website',
+    description: `Built on the template found at https://github.com/timlrx/tailwind-nextjs-starter-blog.`,
+    imgSrc: '/static/images/headshot.jpg',
+    href: 'https://github.com/zachjackdaniels/portfolio-blog',
   },
 ]
 
