@@ -3,7 +3,7 @@ const siteMetadata = {
   author: 'Zach Daniels',
   headerTitle: '☁️ Zach Daniels',
   description:
-    'Part portfolio - part blog | Cloud Infra., Web development, Music, and other things.',
+    'Part portfolio - part blog | cloud infrastructure, web dev, music, and other things.',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',

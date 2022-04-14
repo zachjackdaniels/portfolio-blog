@@ -49,6 +49,54 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
             {siteMetadata.description}
           </p>
+          <p className="text-lg leading-7 text-gray-900 dark:text-gray-400">
+            My name is Zach. I'm a student at Brigham Young University in the first year of my
+            Masters of Information Systems Management program. I have some exciting things I'm
+            working on in the coming year that I would like to keep you posted on.
+          </p>
+          <p className="text-lg leading-7 text-gray-900 dark:text-gray-400">
+            I'm a part of two programs: BYU Sandbox and the Levinthal Program. Sandbox is a new
+            product accelerator program where I'll be replacing my masters classes with time spent
+            as a software engineer on a team consisting of a PM, a UX designer, and a fellow
+            software engineer. We'll work on a tech product/service over the course of the school
+            year and showcase our efforts to VCs and angel investors at the end.
+          </p>
+
+          <p className="text-lg leading-7 text-gray-900 dark:text-gray-400">
+            We have a lot of talent here in Utah who have offered their help in mentoring us to
+            create something that will help the world. I'm so excited for the chance to grow my
+            leadership skills, expand my network, and create something that will change lives.
+            Between now and this fall I will be spending my time outside of work and classes
+            learning skills to hopefully minimize my imposter syndrome by the time this rolls
+            around.
+          </p>
+
+          <p className="text-lg leading-7 text-gray-900 dark:text-gray-400">
+            Being a part of Sandbox has already opened two wonderful opportunities. I have
+            graciously been accepted to be a part of the first cohort of the Levinthal Fellows
+            program led by Michael Levinthal. Mike is an amazing mentor and is friend to many within
+            the Wasatch community and at Stanford. His role as Managing Partner at Levinthal Capital
+            has led to encounters with incredible entrepreneurs from across the country. Mike has
+            put in a great effort to create a program here at BYU that is similar to the one he
+            helped lead at Stanford's Mayfield Fellows Program. He is pulling out all stops to
+            introduce us to these senior-level founders, CEOs, and thought leaders so that we can
+            build a greater entrepreneurial mindset, skills, and network. As you can imagine, this
+            has already been a life-changing opportunity. As some of you know already, I spent two
+            years of my life serving the people of Rome, Italy between 2016-2018. I'm so excited to
+            be heading back to Italy this summer with these incredible cohort of students picked out
+            for the Levinthal Fellows program. We will visit Italy for five weeks to explore art and
+            history through the lenses of entrepreneurship. Don't think that despite my food
+            intolerances I won't be eating all the pizza and gelato I can afford.
+          </p>
+
+          <p className="text-lg leading-7 text-gray-900 dark:text-gray-400">
+            Finally, late last night I was stunned to receive news that I was extended an internship
+            with Amazon as an Associate Solutions Architect Intern! I'm so excited to work with
+            cloud technologies from an industry leader and open doors for a career in cloud. I'm
+            grateful for Degan Kettles for helping me get prepared for this opportunity. And I'm
+            excited to give updates on this opportunity as they come along.
+          </p>
+
           {/* potentially put images here */}
           {/* <div className="mt-6 flex w-full justify-center">
             <p>asdfasd</p>

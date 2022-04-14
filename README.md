@@ -1,13 +1,16 @@
-#Zach's Blog/Portfolio
-## to do:
-[] fix inline typewriter line index.html
-[] upload a few example blog posts
-[] upload a few example projects
-[] display personal pictures on index
+# Zach's Blog/Portfolio
 
-#Credits
-Big thanks goes to Timothy Lin for building on Tailwind's starter blog. 
+This is a portfolio/blog website using next.js and tailwind. I am hosting on vercel at zachdaniels.systems.
+There are several pages which outline what I do and my skills. The main page also sports a neat typewriter feature courtesy of https://www.npmjs.com/package/typewriter-effect
+
+---
+
+# Credits
+
+Big thanks goes to Timothy Lin for building on Tailwind's starter blog.
+
 # Tailwind Nextjs Starter Blog
+
 View the code ![here](https://github.com/timlrx/tailwind-nextjs-starter-blog)
 [![GitHub Repo stars](https://img.shields.io/github/stars/timlrx/tailwind-nextjs-starter-blog?style=social)](https://GitHub.com/timlrx/tailwind-nextjs-starter-blog/stargazers/)
 [![GitHub forks](https://img.shields.io/github/forks/timlrx/tailwind-nextjs-starter-blog?style=social)](https://GitHub.com/timlrx/tailwind-nextjs-starter-blog/network/)
